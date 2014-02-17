@@ -1,0 +1,64 @@
+doctype html
+//[if IE 9]><html class="lt-ie10" lang="en" > <![endif]
+html(class='no-js', lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Gadget Express
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/foundation.css')
+    link(rel='stylesheet', href='/css/app.css')
+    script(src='/js/vendor/modernizr.js')
+  body
+    .row
+      .small-12.columns
+        h1 Gadget Express
+        h2 "We sell gadgets!"
+    .row
+      .small-3.columns
+        form#userBox
+          fieldset
+            legend New User
+            label(for='name') Name
+              input(type='text', placeholder='Name', name='name')
+            label(for='deposit') Deposit
+              input(type='text', placeholder='Deposit Amount', name='balance')
+            button.small#createUser Create User
+      .small-9.columns
+        label &nbsp;
+        table#userTable
+          thead
+            th User
+            th Balance
+            th Gadgets
+          tbody
+    .row
+      .small-3.columns
+        form#gadgetBox
+          fieldset
+            legend New Gadget
+            label(for='name') Name
+              input(type='text', placeholder='Name', name='name')
+            label(for='cost') Cost
+              input(type='text', placeholder='Cost', name='cost')
+            label(for='number') Number
+              input(type='text', placeholder='Number', name='number')
+            button.small#createGadget Create Gadget
+      .small-9.columns
+        label &nbsp;
+        table#gadgetTable
+          thead
+            th
+            th Gadget
+            th Cost
+            th # in Stock
+            th
+            th
+            th
+          tbody
+
+    script(src='/js/vendor/jquery.js')
+    script(src='/js/vendor/foundation.js')
+    script(src='/js/vendor/lodash.js')
+    script(src='/js/source/main.js')
+

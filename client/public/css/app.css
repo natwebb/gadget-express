@@ -1,0 +1,10 @@
+body {
+  background-color: #ffffff;
+}
+table {
+  width: 100%;
+}
+button,
+select {
+  margin: 0px;
+}
